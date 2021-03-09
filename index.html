@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>FCC Survey Form</title>
+		<link rel='stylesheet' href='./style.css'>
+	</head>
+
+	<body>
+		<header>
+			<h1>freeCodeCamp Survey Form</h1>
+			<h2>Thank you for taking the time to help us improve the platform</h2>
+		</header>
+		<form>
+			<section>
+				<label>Name</label>
+				<input type='text' placeholder='Enter your name' required>
+			</section>
+			<section>
+				<label>Email</label>
+				<input type='text' placeholder='Enter your Email' required>
+			</section>
+			<section>
+				<label>Age (optional)</label>
+				<input type='number' placeholder='Age'>
+			</section>
+			<section>
+				<label>Which option best describes your current role?</label>
+				<select required>
+					<option selected disabled hidden>Select current role</option>
+					<option>Student</option>
+					<option>Full Time Job</option>
+					<option>Full Time Learner</option>
+					<option>Prefer not to Say</option>
+					<option>Other</option>
+				</select>
+			</section>
+			<section>
+				<label>Would you recommend freeCodeCamp to a friend?</label>
+				<label for='y'>
+					<input id='y' type='radio' name='poll' class='radio'>Definitely
+				</label>
+				<label for='n'>
+					<input id='n' type='radio' name='poll' class='radio'>Maybe
+				</label>
+				<label for='m'>
+					<input id='m' type='radio' name='poll' class='radio'>Not sure
+				</label>
+			</section>
+			<section>
+				<label>What is your favorite feature of freeCodeCamp?</label>
+				<select required>
+					<option selected disabled hidden>Select an option</option>
+					<option>Challenges</option>
+					<option>Projects</option>
+					<option>Community</option>
+					<option>Open Source</option>
+				</select>
+			</section>
+			<section>
+				<label>What would you like to see improved? (Check all that apply)</label>
+				<label><input type='checkbox' class='checkbox'>Front-end Projects</label>
+				<label><input type='checkbox'>Back-end Projects</label>
+				<label><input type='checkbox'>Data Visualization</label>
+				<label><input type='checkbox'>Challenges</label>
+				<label><input type='checkbox'>Open Source Community</label>
+				<label><input type='checkbox'>Gitter help rooms</label>
+				<label><input type='checkbox'>Videos</label>
+				<label><input type='checkbox'>City Meetups</label>
+				<label><input type='checkbox'>Wiki</label>
+				<label><input type='checkbox'>Forum</label>
+				<label><input type='checkbox'>Additional Courses</label>
+			</section>
+			<section>
+				<label>Any comments or suggestions?</label>
+				<textarea name='comments' placeholder='Enter your comment here...' rows='5'></textarea>
+			</section>
+			<button type='button'>Submit</button>
+		</form>
+	</body>
+</html>
